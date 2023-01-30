@@ -1,7 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    target: 'static',
     title: 'landing-air',
     htmlAttrs: {
       lang: 'pt-Br'
@@ -70,5 +69,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    analyze: {
+      analyzerMode: 'static'
+    }
   }
 }
