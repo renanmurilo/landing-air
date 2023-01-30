@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55.516" height="53.914" viewBox="0 0 55.516 53.914">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0a5711"/>
+      <stop offset="1" stop-color="#94cc33"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_12207" data-name="Grupo 12207" transform="translate(-1196.985 -467.993)">
+    <path id="Caminho_4626" data-name="Caminho 4626" d="M1286.03,479.469l-28.853,28.853-9.73-9.73-2.2,2.2,11.931,11.931,1.078-1.078,0,0,29.978-29.977Z" transform="translate(-35.731 -8.497)" fill="url(#linear-gradient)"/>
+    <g id="Grupo_12206" data-name="Grupo 12206" transform="translate(1196.985 467.993)">
+      <path id="Caminho_4627" data-name="Caminho 4627" d="M1241.266,521.907h-34.647a9.645,9.645,0,0,1-9.634-9.634V477.627a9.645,9.645,0,0,1,9.634-9.634h17.323v3.115h-17.323a6.526,6.526,0,0,0-6.518,6.518v34.647a6.526,6.526,0,0,0,6.518,6.519h34.647a6.526,6.526,0,0,0,6.518-6.519V494.95h3.115v17.323A9.645,9.645,0,0,1,1241.266,521.907Z" transform="translate(-1196.985 -467.993)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

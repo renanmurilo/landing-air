@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46.36" height="81.214" viewBox="0 0 46.36 81.214">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff6b09"/>
+      <stop offset="1" stop-color="#ffc709"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_12154" data-name="Grupo 12154" transform="translate(-2797.003 -1397.178)">
+    <path id="Caminho_4591" data-name="Caminho 4591" d="M2834.437,1397.178H2805.93A8.937,8.937,0,0,0,2797,1406.1v63.359a8.937,8.937,0,0,0,8.927,8.927h28.507a8.937,8.937,0,0,0,8.927-8.927V1406.1A8.937,8.937,0,0,0,2834.437,1397.178Zm-28.507,2.794h28.507a6.14,6.14,0,0,1,6.133,6.133v4.082H2799.8V1406.1A6.14,6.14,0,0,1,2805.93,1399.972Zm34.639,13.009v49.9H2799.8v-49.9Zm-6.133,62.617H2805.93a6.14,6.14,0,0,1-6.133-6.133v-3.786h40.772v3.786A6.14,6.14,0,0,1,2834.437,1475.6Z" fill="url(#linear-gradient)"/>
+    <circle id="Elipse_515" data-name="Elipse 515" cx="1.635" cy="1.635" r="1.635" transform="translate(2818.548 1468.78)" fill="url(#linear-gradient)"/>
+    <rect id="Retângulo_4515" data-name="Retângulo 4515" width="12.365" height="2.854" rx="1.427" transform="translate(2814 1403.454)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
