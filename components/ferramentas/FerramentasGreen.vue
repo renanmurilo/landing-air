@@ -67,7 +67,7 @@
                     </div>
                 </div>
 
-                <a href="" class="btn btn__black">COMECE AGORA</a>
+                <a href="#simulacao" class="btn btn__black">COMECE AGORA</a>
             </div>
         </div>
     </div>

@@ -35,10 +35,6 @@
     </div>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style lang="scss">
 .seguranca__green {
     width: 100%;

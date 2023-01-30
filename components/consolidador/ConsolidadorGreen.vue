@@ -14,16 +14,14 @@
                     inseridos.
                 </p>
 
-                <a href="" class="btn btn__green">Comece agora</a>
-                <a href="" class="link">Saiba mais sobre a BRITech</a>
+                <a href="#simulacao" class="btn btn__green">Comece agora</a>
+                <a href="https://britech.global/" target="_blank" class="link">
+                    Saiba mais sobre a BRITech
+                </a>
             </div>
         </div>
     </div>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style lang="scss">
 .consolidador__green {

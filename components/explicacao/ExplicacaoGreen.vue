@@ -67,7 +67,7 @@
                     </div>
                 </div>
 
-                <a href="" class="btn btn__black flutuante">
+                <a href="#simulacao" class="btn btn__black flutuante">
                     Escolha seu plano
                 </a>
 

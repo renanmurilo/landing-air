@@ -1,5 +1,5 @@
 <template>
-    <div class="simulacao__primary">
+    <div class="simulacao__primary" id="simulacao">
         <div class="shell">
             <div class="content__simulacao">
                 <h2>
@@ -31,10 +31,9 @@
                             <div class="form__controls">
                                 <p>
                                     Quantidade de clientes com
-                                    <span
-                                        >patrimônio líquido INFERIOR a R$
-                                        500K</span
-                                    >
+                                    <span>
+                                        patrimônio líquido INFERIOR a R$ 500K
+                                    </span>
                                 </p>
 
                                 <input
@@ -56,10 +55,6 @@
         </div>
     </div>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style lang="scss">
 .simulacao__primary {

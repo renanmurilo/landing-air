@@ -13,7 +13,7 @@
                     descobrir!
                 </h3>
 
-                <a href="" class="btn btn__green">
+                <a href="#simulacao" class="btn btn__green">
                     CONSULTE UM DOS NOSSOS ESPECIALISTAS
                 </a>
             </div>

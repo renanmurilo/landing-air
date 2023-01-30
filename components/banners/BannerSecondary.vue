@@ -16,7 +16,9 @@
                     controle com inteligência os portfólios sob gestão.
                 </p>
 
-                <a href="" class="btn btn__secondary"> Escolha o seu plano </a>
+                <a href="#simulacao" class="btn btn__secondary">
+                    Escolha o seu plano
+                </a>
             </div>
         </div>
     </div>

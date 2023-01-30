@@ -15,7 +15,7 @@
                             internacional e estamos indo além para criar nossos
                             próprios padrões de excelência.
                         </p>
-                        <a href="" class="link">Saiba mais</a>
+                        <a href="#simulacao" class="link">Saiba mais</a>
                     </div>
 
                     <div class="icons">

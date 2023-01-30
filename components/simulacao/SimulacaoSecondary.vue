@@ -1,5 +1,5 @@
 <template>
-    <div class="simulacao__secondary">
+    <div class="simulacao__secondary" id="simulacao">
         <div class="shell">
             <div class="content__simulacao">
                 <h2>
@@ -56,10 +56,6 @@
         </div>
     </div>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style lang="scss">
 .simulacao__secondary {
