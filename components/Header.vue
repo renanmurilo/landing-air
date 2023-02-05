@@ -41,14 +41,8 @@
                         </div>
 
                         <li class="nav__link">
-                            <a
-                                href="https://britech.global/"
-                                target="_blank"
-                                class="link"
-                            >
-                                A BRITECH
-                            </a>
-                            <a href="" class="link">PLANOS</a>
+                            <a href="#conheca" class="link"> A BRITECH </a>
+                            <a href="#simulacao" class="link">PLANOS</a>
                             <nuxt-link to="/DuvidasFrequentes" class="link">
                                 DÚVIDAS FREQUENTES
                             </nuxt-link>

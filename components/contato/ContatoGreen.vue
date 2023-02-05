@@ -1,5 +1,5 @@
 <template>
-    <div class="contato__green">
+    <div class="contato__green" id="contato">
         <div class="shell">
             <div class="content__contato">
                 <div class="text">

@@ -2,7 +2,8 @@
 const state = {
     primary: true,
     secondary: false,
-    green: false
+    green: false,
+    showModal: false
 };
 
 const getters = {
@@ -11,6 +12,8 @@ const getters = {
     GET_TEMPLATE_SECONDARY: state => state.secondary,
 
     GET_TEMPLATE_GREEN: state => state.green,
+
+    GET_SHOW_MODAL: state => state.showModal
 };
 
 const mutations = {
@@ -23,6 +26,9 @@ const mutations = {
     SET_TEMPLATE_GREEN: (state, green) => {
         state.green = green
     },
+    SET_SHOW_MODAL: (state, showModal) => {
+        state.showModal = showModal
+    }
 };
 
 const actions = {

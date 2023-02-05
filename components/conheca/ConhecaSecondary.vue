@@ -1,5 +1,5 @@
 <template>
-    <div class="conheca__secondary">
+    <div class="conheca__secondary" id="conheca">
         <div class="shell">
             <div class="content__conheca">
                 <h2>CONHEÇA A BRITECH</h2>

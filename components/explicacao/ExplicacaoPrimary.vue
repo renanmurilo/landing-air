@@ -17,7 +17,10 @@
                 </div>
 
                 <div class="row__wrapper">
-                    <div class="image">
+                    <div
+                        class="image"
+                        @click.stop.prevent="selectImage('/primary/crm.png')"
+                    >
                         <img src="@/assets/images/primary/crm.png" alt="" />
                     </div>
 
@@ -131,11 +134,20 @@
                 </div>
             </div>
         </div>
+        <Modal :image="image" />
     </div>
 </template>
 
 <script>
+import Modal from './Modal.vue';
+
 export default {
+    components: { Modal },
+    data() {
+        return {
+            image: '',
+        };
+    },
     methods: {
         selectPrimary() {
             this.$store.commit('SET_TEMPLATE_PRIMARY', true);
@@ -151,6 +163,11 @@ export default {
             this.$store.commit('SET_TEMPLATE_PRIMARY', false);
             this.$store.commit('SET_TEMPLATE_SECONDARY', false);
             this.$store.commit('SET_TEMPLATE_GREEN', true);
+        },
+        selectImage(image) {
+            console.log(image);
+            this.image = image;
+            this.$store.commit('SET_SHOW_MODAL', true);
         },
     },
 };

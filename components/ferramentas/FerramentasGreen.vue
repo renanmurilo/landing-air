@@ -16,7 +16,7 @@
                     <div class="box">
                         <div class="image">
                             <img
-                                src="@/assets/images/secondary/xp.svg"
+                                src="@/assets/images/green/integre.png"
                                 alt=""
                             />
                         </div>
@@ -137,6 +137,12 @@
                 }
 
                 &:nth-child(1) {
+                    margin-top: 1.2rem;
+
+                    @media ($mobile) {
+                        margin-top: 0;
+                    }
+
                     .image {
                         @media ($mobile) {
                             max-width: 2.125rem;
@@ -161,8 +167,9 @@
                     }
 
                     .image {
+                        max-width: 4.375rem;
                         @media ($mobile) {
-                            max-width: 2.375rem;
+                            max-width: 3.375rem;
                         }
                     }
                 }
@@ -172,6 +179,10 @@
                         @media ($mobile) {
                             max-width: 5.0788rem;
                         }
+                    }
+
+                    h3 {
+                        max-width: 15.75rem;
                     }
                 }
 

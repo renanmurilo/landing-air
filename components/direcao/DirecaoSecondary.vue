@@ -13,7 +13,7 @@
                     descobrir!
                 </h3>
 
-                <a href="#simulacao" class="btn btn__secondary">
+                <a href="#contato" class="btn btn__secondary">
                     CONSULTE UM DOS NOSSOS ESPECIALISTAS
                 </a>
             </div>
