@@ -46,7 +46,7 @@
                             :class="{ active: showAccordeon === 2 }"
                             @click.stop.prevent="openAccondeon(2)"
                         >
-                            COMO FAÇO PARA ME TORNAR UM CLIENTE?
+                            Como cadastrar um cliente?
 
                             <img src="@/assets/images/arrow-down.svg" alt="" />
                         </h3>
@@ -56,12 +56,12 @@
                             :class="{ active: showAccordeon === 2 }"
                         >
                             <p>
-                                Entre em contato conosco via e-mail, por
-                                telefone ou através do nosso representante em
-                                sua região. Todo cliente deve ser pessoa
-                                jurídica. As vendas de ferramentas são feitas
-                                somente no atacado, existindo uma política de
-                                faturamento mínimo.
+                                Basta acessar o menu de clientes e efetuar uma
+                                nova inclusão. Importante falar que um cliente
+                                não possui uma carteira, ou seja, seu cliente
+                                poderá ter mais de uma carteira, caso seja uma
+                                família, ou caso ele queira ver os investimentos
+                                de forma segregada.
                             </p>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                             :class="{ active: showAccordeon === 3 }"
                             @click.stop.prevent="openAccondeon(3)"
                         >
-                            COMO FAÇO PARA ME TORNAR UM CLIENTE?
+                            Como faço para integrar contas?
 
                             <img src="@/assets/images/arrow-down.svg" alt="" />
                         </h3>
@@ -84,12 +84,11 @@
                             :class="{ active: showAccordeon === 3 }"
                         >
                             <p>
-                                Entre em contato conosco via e-mail, por
-                                telefone ou através do nosso representante em
-                                sua região. Todo cliente deve ser pessoa
-                                jurídica. As vendas de ferramentas são feitas
-                                somente no atacado, existindo uma política de
-                                faturamento mínimo.
+                                Depois de cadastrado uma carteira, no comando de
+                                conectar contas, você poderá buscar os
+                                investimentos realizados nas casas disponíveis,
+                                informando os dados das contas e as credenciais
+                                necessárias.
                             </p>
                         </div>
                     </div>
@@ -102,7 +101,7 @@
                             :class="{ active: showAccordeon === 4 }"
                             @click.stop.prevent="openAccondeon(4)"
                         >
-                            COMO FAÇO PARA ME TORNAR UM CLIENTE?
+                            Como minha carteira é atualizada?
 
                             <img src="@/assets/images/arrow-down.svg" alt="" />
                         </h3>
@@ -112,12 +111,12 @@
                             :class="{ active: showAccordeon === 4 }"
                         >
                             <p>
-                                Entre em contato conosco via e-mail, por
-                                telefone ou através do nosso representante em
-                                sua região. Todo cliente deve ser pessoa
-                                jurídica. As vendas de ferramentas são feitas
-                                somente no atacado, existindo uma política de
-                                faturamento mínimo.
+                                A cada nova movimentação a posição da sua
+                                carteira já será atualizada, com preço de compra
+                                do ativo. Caso esse já exista, ficará com o
+                                preço de aquisição. Já o preço atualizado
+                                ocorrerá de forma automática de um dia para o
+                                outro, com o fechamento dos mercados.
                             </p>
                         </div>
                     </div>
@@ -130,7 +129,7 @@
                             :class="{ active: showAccordeon === 5 }"
                             @click.stop.prevent="openAccondeon(5)"
                         >
-                            COMO FAÇO PARA ME TORNAR UM CLIENTE?
+                            Posso ter operações manuais e integradas?
 
                             <img src="@/assets/images/arrow-down.svg" alt="" />
                         </h3>
@@ -140,12 +139,9 @@
                             :class="{ active: showAccordeon === 5 }"
                         >
                             <p>
-                                Entre em contato conosco via e-mail, por
-                                telefone ou através do nosso representante em
-                                sua região. Todo cliente deve ser pessoa
-                                jurídica. As vendas de ferramentas são feitas
-                                somente no atacado, existindo uma política de
-                                faturamento mínimo.
+                                Sim. O sistema irá consolidar as operações
+                                integradas, bem como aquelas colocadas
+                                manualmente, somando todas as posições.
                             </p>
                         </div>
                     </div>
@@ -158,7 +154,8 @@
                             :class="{ active: showAccordeon === 6 }"
                             @click.stop.prevent="openAccondeon(6)"
                         >
-                            COMO FAÇO PARA ME TORNAR UM CLIENTE?
+                            Como funciona o acompanhamento da carteira, frente
+                            aos meus objetivos?
 
                             <img src="@/assets/images/arrow-down.svg" alt="" />
                         </h3>
@@ -168,40 +165,12 @@
                             :class="{ active: showAccordeon === 6 }"
                         >
                             <p>
-                                Entre em contato conosco via e-mail, por
-                                telefone ou através do nosso representante em
-                                sua região. Todo cliente deve ser pessoa
-                                jurídica. As vendas de ferramentas são feitas
-                                somente no atacado, existindo uma política de
-                                faturamento mínimo.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="accordeon"
-                        :class="{ active: showAccordeon === 7 }"
-                    >
-                        <h3
-                            :class="{ active: showAccordeon === 7 }"
-                            @click.stop.prevent="openAccondeon(7)"
-                        >
-                            COMO FAÇO PARA ME TORNAR UM CLIENTE?
-
-                            <img src="@/assets/images/arrow-down.svg" alt="" />
-                        </h3>
-
-                        <div
-                            class="description"
-                            :class="{ active: showAccordeon === 7 }"
-                        >
-                            <p>
-                                Entre em contato conosco via e-mail, por
-                                telefone ou através do nosso representante em
-                                sua região. Todo cliente deve ser pessoa
-                                jurídica. As vendas de ferramentas são feitas
-                                somente no atacado, existindo uma política de
-                                faturamento mínimo.
+                                Você pode incluir notas de acompanhamento da
+                                carteira, como decisões de realocação, objetivos
+                                a serem alcançados, reunião com clientes,
+                                através do recurso de acompanhamento disponível
+                                no dashboard. Você poderá colocar a data e o
+                                texto que desejar.
                             </p>
                         </div>
                     </div>
@@ -307,6 +276,7 @@ export default {
                     align-items: center;
                     justify-content: space-between;
                     padding-bottom: 1.2813rem;
+                    text-transform: uppercase;
                     margin-bottom: 1.3438rem;
                     border-bottom: 0.1875rem solid $blue;
                     cursor: pointer;
