@@ -3,7 +3,7 @@ const state = {
     primary: true,
     secondary: false,
     green: false,
-    showModal: false
+    showSimulacao: false
 };
 
 const getters = {
@@ -13,7 +13,7 @@ const getters = {
 
     GET_TEMPLATE_GREEN: state => state.green,
 
-    GET_SHOW_MODAL: state => state.showModal
+    GET_SHOW_SIMULACAO: state => state.showSimulacao
 };
 
 const mutations = {
@@ -26,8 +26,8 @@ const mutations = {
     SET_TEMPLATE_GREEN: (state, green) => {
         state.green = green
     },
-    SET_SHOW_MODAL: (state, showModal) => {
-        state.showModal = showModal
+    SET_SHOW_SIMULACAO: (state, showSimulacao) => {
+        state.showSimulacao = showSimulacao
     }
 };
 
