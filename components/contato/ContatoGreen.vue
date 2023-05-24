@@ -8,69 +8,9 @@
                     <div class="bg-primary-gradiente"></div>
                 </div>
 
-                <form action="" class="form__class">
-                    <div class="form__row">
-                        <div class="form__controls w45">
-                            <input
-                                type="text"
-                                placeholder="Nome"
-                                class="field"
-                            />
-                        </div>
-
-                        <div class="form__controls w45">
-                            <input
-                                type="text"
-                                placeholder="Sobrenome"
-                                class="field"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="form__row">
-                        <div class="form__controls">
-                            <input
-                                type="email"
-                                placeholder="E-mail"
-                                class="field"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="form__row">
-                        <div class="form__controls w45">
-                            <input
-                                type="tel"
-                                placeholder="Telefone"
-                                class="field"
-                            />
-                        </div>
-
-                        <div class="form__controls w45">
-                            <input
-                                type="text"
-                                placeholder="Assunto"
-                                class="field"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="form__row">
-                        <div class="form__controls">
-                            <textarea
-                                class="field"
-                                name="message"
-                                placeholder="Mensagem"
-                            ></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form__row button">
-                        <button type="submit" class="btn btn__green">
-                            Enviar
-                        </button>
-                    </div>
-                </form>
+                <Hub>
+                    <slot name="contato" />
+                </Hub>
             </div>
         </div>
     </div>
@@ -83,13 +23,19 @@ export default {};
 <style lang="scss">
 .contato__green {
     width: 100%;
+    padding: 9rem 0 10rem;
+
+    @media ($mobile) {
+        display: block;
+        height: 40.625rem;
+    }
 
     .content__contato {
         width: 100%;
         margin: 3.2806rem 0 2.8375rem;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        height: 100%;
 
         @media ($mobile) {
             flex-wrap: wrap;
@@ -98,10 +44,15 @@ export default {};
         }
 
         .text {
-            max-width: 20.75rem;
+            justify-content: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
 
             @media ($mobile) {
                 max-width: 100%;
+                justify-content: flex-start;
+                margin: 0;
             }
 
             h3 {

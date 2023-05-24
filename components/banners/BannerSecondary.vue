@@ -6,18 +6,20 @@
             <div class="content__banner">
                 <h6>MUITO MAIS QUE UM CONSOLIDADOR DE CARTEIRAS</h6>
                 <h1>
-                    A TECNOLOGIA QUE IMPULSIONA A SUA ASSESSORIA, OTIMIZANDO A
-                    JORNADA E A INTERFACE COM O CLIENTE DE PONTA A PONTA
+                    A tecnologia que impulsiona ASSESSORES E CONSULTORES,
+                    OTIMIZANDO A JORNADA E A INTERFACE COM O CLIENTE DE PONTA A
+                    PONTA
                 </h1>
                 <div class="bg-primary-gradiente"></div>
                 <p>
-                    Nunca foi tão fácil analisar, consolidar e monitorar
-                    carteiras de investimento. Visualize de forma detalhada e
-                    controle com inteligência os portfólios sob gestão.
+                    Nunca foi tão fácil implantar, analisar, consolidar e
+                    monitorar carteiras de investimento. Visualize de forma
+                    detalhada e controle com inteligência os portfólios e
+                    clientes sob gestão.
                 </p>
 
                 <a href="#simulacao" class="btn btn__secondary">
-                    Escolha o seu plano
+                    SIMULE SEU PLANO
                 </a>
             </div>
         </div>

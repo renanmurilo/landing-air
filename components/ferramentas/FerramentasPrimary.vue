@@ -13,7 +13,7 @@
                                 alt=""
                             />
                         </div>
-                        <h3>Implemente de simples e rápida</h3>
+                        <h3>Implemente de forma simples e rápida</h3>
                     </div>
 
                     <div class="box">
@@ -46,7 +46,10 @@
                                 alt=""
                             />
                         </div>
-                        <h3>Acompanhe metas e evolução da carteira</h3>
+                        <h3>
+                            Política de investimentos: acompanhe metas e
+                            evolução da carteira
+                        </h3>
                     </div>
 
                     <div class="box">

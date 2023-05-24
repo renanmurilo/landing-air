@@ -7,70 +7,9 @@
                     <h2>ENTRE EM CONTATO!</h2>
                     <div class="bg-primary-gradiente"></div>
                 </div>
-
-                <form action="" class="form__class">
-                    <div class="form__row">
-                        <div class="form__controls w45">
-                            <input
-                                type="text"
-                                placeholder="Nome"
-                                class="field"
-                            />
-                        </div>
-
-                        <div class="form__controls w45">
-                            <input
-                                type="text"
-                                placeholder="Sobrenome"
-                                class="field"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="form__row">
-                        <div class="form__controls">
-                            <input
-                                type="email"
-                                placeholder="E-mail"
-                                class="field"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="form__row">
-                        <div class="form__controls w45">
-                            <input
-                                type="tel"
-                                placeholder="Telefone"
-                                class="field"
-                            />
-                        </div>
-
-                        <div class="form__controls w45">
-                            <input
-                                type="text"
-                                placeholder="Assunto"
-                                class="field"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="form__row">
-                        <div class="form__controls">
-                            <textarea
-                                class="field"
-                                name="message"
-                                placeholder="Mensagem"
-                            ></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form__row button">
-                        <button type="submit" class="btn btn__primary">
-                            Enviar
-                        </button>
-                    </div>
-                </form>
+                <Hub>
+                    <slot name="contato" />
+                </Hub>
             </div>
         </div>
     </div>
@@ -83,13 +22,20 @@ export default {};
 <style lang="scss">
 .contato__primary {
     width: 100%;
+    padding: 9rem 0 10rem;
+    position: relative;
+
+    @media ($mobile) {
+        display: block;
+        height: 40.625rem;
+    }
 
     .content__contato {
         width: 100%;
         margin: 3.2806rem 0 2.8375rem;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        height: 100%;
 
         @media ($mobile) {
             flex-wrap: wrap;
@@ -98,10 +44,16 @@ export default {};
         }
 
         .text {
-            max-width: 20.75rem;
+            width: 100%;
+            justify-content: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
 
             @media ($mobile) {
                 max-width: 100%;
+                justify-content: flex-start;
+                margin: 0;
             }
 
             h3 {
@@ -143,90 +95,6 @@ export default {};
                     width: 6.5625rem;
                     height: 0.3581rem;
                     margin: auto;
-                }
-            }
-        }
-
-        .form__class {
-            width: 27.4375rem;
-
-            @media ($mobile) {
-                width: 17.6875rem;
-                margin-top: 1.4444rem;
-            }
-
-            .form__row {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-
-                @media ($mobile) {
-                    flex-wrap: wrap;
-                    justify-content: center;
-                }
-
-                &.button {
-                    justify-content: flex-end;
-
-                    @media ($mobile) {
-                        justify-content: center;
-                    }
-
-                    .btn__primary {
-                        width: 9.6762rem;
-                        color: $text-dark;
-                        font-size: 1.25rem;
-
-                        @media ($mobile) {
-                            width: 8.375rem;
-                            height: 2.625rem;
-                            font-size: 0.875rem;
-                            border-radius: 0.75rem;
-                        }
-                    }
-                }
-
-                .form__controls {
-                    width: 100%;
-                    margin-bottom: 1.25rem;
-
-                    @media ($mobile) {
-                        margin-bottom: 0.875rem;
-                    }
-
-                    &.w45 {
-                        width: 45%;
-
-                        @media ($mobile) {
-                            width: 100%;
-                        }
-                    }
-
-                    .field {
-                        border-radius: 0.6875rem;
-                        background-color: $text-dark;
-                        height: 2.4375rem;
-                        width: 100%;
-                        @include font-work(0.9375rem, 300, 0);
-                        color: $white;
-                        padding: 0 1.0625rem;
-                        border: none;
-
-                        &::placeholder {
-                            color: $white;
-                        }
-
-                        &[name='message'] {
-                            height: 10.125rem;
-                            border-radius: 1.125rem;
-                            padding-top: 1rem;
-                        }
-
-                        @media ($mobile) {
-                            font-size: 0.875rem;
-                            border-radius: 0.75rem;
-                        }
-                    }
                 }
             }
         }

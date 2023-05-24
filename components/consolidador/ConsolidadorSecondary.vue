@@ -9,9 +9,12 @@
 
                 <p>
                     Com uma tecnologia de ponta, a nova plataforma do grupo
-                    BRITech garante um rápido processamento de múltiplas
-                    carteiras de investimento e uma alta segurança dos dados
-                    inseridos.
+                    BRITech garante um
+                    <u
+                        >rápido processamento de múltiplas carteiras de
+                        investimento</u
+                    >
+                    e uma <u>alta segurança dos dados inseridos.</u>
                 </p>
 
                 <a href="#simulacao" class="btn btn__secondary">Comece agora</a>

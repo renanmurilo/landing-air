@@ -3,7 +3,8 @@ const state = {
     primary: true,
     secondary: false,
     green: false,
-    showSimulacao: false
+    showSimulacao: false,
+    showContato: false
 };
 
 const getters = {
@@ -13,7 +14,9 @@ const getters = {
 
     GET_TEMPLATE_GREEN: state => state.green,
 
-    GET_SHOW_SIMULACAO: state => state.showSimulacao
+    GET_SHOW_SIMULACAO: state => state.showSimulacao,
+
+    GET_SHOW_CONTATO: state => state.showContato
 };
 
 const mutations = {
@@ -28,6 +31,9 @@ const mutations = {
     },
     SET_SHOW_SIMULACAO: (state, showSimulacao) => {
         state.showSimulacao = showSimulacao
+    },
+    SET_SHOW_CONTATO: (state, showContato) => {
+        state.showContato = showContato
     }
 };
 

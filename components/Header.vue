@@ -41,11 +41,28 @@
                         </div>
 
                         <li class="nav__link">
-                            <a href="#conheca" class="link"> A BRITECH </a>
+                            <!-- <a href="#conheca" class="link"> A BRITECH </a> -->
                             <a href="#simulacao" class="link">PLANOS</a>
+                        </li>
+
+                        <li class="nav__link">
                             <nuxt-link to="/DuvidasFrequentes" class="link">
                                 DÚVIDAS FREQUENTES
                             </nuxt-link>
+                        </li>
+
+                        <li class="nav__link">
+                            <a
+                                href="https://air-acesso.britech.com.br/login"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn__primary"
+                                :class="[
+                                    { secondary: secondary, green: green },
+                                ]"
+                            >
+                                Login
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -154,6 +171,8 @@ header {
             }
             .nav__content {
                 width: 100%;
+                display: flex;
+                align-items: center;
 
                 @media ($mobile) {
                     display: flex;
@@ -186,6 +205,22 @@ header {
                             &:last-child {
                                 margin-bottom: 0;
                             }
+                        }
+                    }
+
+                    .btn__primary {
+                        width: 5.6875rem;
+                        height: 2.6875rem;
+                        font-size: 1rem;
+                        color: $text;
+                        font-weight: 400;
+
+                        &.secondary {
+                            background-color: $yellow;
+                        }
+
+                        &.green {
+                            background-color: $green;
                         }
                     }
                 }

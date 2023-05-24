@@ -16,12 +16,12 @@
 
                         <div class="text">
                             <h2>
-                                GANHE AGILIDADE EM SUA OPERAÇÃO E FOQUE NO QUE
-                                REALMENTE IMPORTA:
+                                AMPLITUDE TECNOLÓGICA PARA GERAR EFICIÊNCIA EM
+                                TODAS AS ETAPAS DA SUA OPERAÇÃO
                             </h2>
                             <p>
-                                a rentabilidade e a saúde financeira dos seus
-                                clientes.
+                                Ganhe agilidade e foque no que realmente
+                                importa: seu cliente!
                             </p>
                         </div>
                     </div>
@@ -39,12 +39,12 @@
 
                         <div class="text">
                             <h2>
-                                GANHE AGILIDADE EM SUA OPERAÇÃO E FOQUE NO QUE
-                                REALMENTE IMPORTA:
+                                MUITO MAIS QUE UM CONSOLIDADOR DE CARTEIRAS DE
+                                INVESTIMENTO
                             </h2>
                             <p>
-                                a rentabilidade e a saúde financeira dos seus
-                                clientes.
+                                Uma solução pensada para facilitar todo o seu
+                                processo!
                             </p>
                         </div>
                     </div>
@@ -199,10 +199,6 @@ export default {
 
             .slick-dots {
                 bottom: 1.5rem;
-
-                @media ($mobile) {
-                    bottom: -3.2rem;
-                }
 
                 li {
                     margin: 0 0.4375rem;

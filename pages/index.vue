@@ -10,7 +10,7 @@
 
         <IndexSeguranca />
 
-        <IndexSimulacao />
+        <IndexSelectColor />
 
         <IndexDirecao />
 

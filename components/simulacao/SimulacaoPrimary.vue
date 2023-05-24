@@ -10,16 +10,27 @@
                 <div class="bg-primary-gradiente"></div>
 
                 <div class="box">
-                    <form action="" class="form__class" @submit.stop.prevent="simulate">
+                    <form
+                        action=""
+                        class="form__class"
+                        @submit.stop.prevent="simulate"
+                    >
                         <div class="form__row">
                             <div class="form__controls">
                                 <p>
                                     Quantidade de clientes com
-                                    <span>patrimônio líquido SUPERIOR a R$
-                                        500K</span>
+                                    <span
+                                        >patrimônio líquido SUPERIOR a R$
+                                        500K</span
+                                    >
                                 </p>
 
-                                <input type="text" placeholder="Digite aqui..." class="field" v-model="superior" />
+                                <input
+                                    type="text"
+                                    placeholder="Digite aqui..."
+                                    class="field"
+                                    v-model="superior"
+                                />
                             </div>
 
                             <div class="form__controls">
@@ -30,93 +41,156 @@
                                     </span>
                                 </p>
 
-                                <input type="text" placeholder="Digite aqui..." class="field" v-model="inferior" />
+                                <input
+                                    type="text"
+                                    placeholder="Digite aqui..."
+                                    class="field"
+                                    v-model="inferior"
+                                />
                             </div>
                         </div>
 
-                        <div class="form__row button" :class="{ active: !total}">
-                            <div class="total" v-if="total">
+                        <div
+                            class="form__row button"
+                            :class="{ active: !total }"
+                        >
+                            <div class="total" v-if="total && total <= '2500'">
                                 <h5>R$</h5>
                                 <h3>{{ total }}</h3>
                                 <h6>,00 <span>/mês</span></h6>
                             </div>
 
-                            <button type="submit" class="btn btn__primary">
+                            <div class="total" v-if="total >= '2500'">
+                                <h5>Falar com um especialista</h5>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="btn btn__primary"
+                                v-if="!total"
+                            >
                                 Simular
                             </button>
 
-                            <a v-if="total" @click.stop.prevent="reset" class="btn__link">Simular outro plano</a>
+                            <a
+                                href="https://air-acesso.britech.com.br/create-account"
+                                class="btn btn__primary"
+                                v-if="total && total <= '2500'"
+                            >
+                                CONTRATAR
+                            </a>
+
+                            <a
+                                href="#contato"
+                                class="btn btn__primary"
+                                v-if="total && total >= '2500'"
+                            >
+                                CONTRATAR
+                            </a>
+
+                            <a
+                                v-if="total"
+                                @click.stop.prevent="reset"
+                                class="btn__link"
+                                >Simular outro plano</a
+                            >
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        <ModalSimulacao />
+
+        <HubSimulacao v-if="showContato">
+            <slot name="simulacao" />
+        </HubSimulacao>
     </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
+    computed: {
+        ...mapGetters({
+            showContato: 'GET_SHOW_CONTATO',
+        }),
+    },
     data() {
         return {
             superior: null,
             inferior: null,
-            total: null
-        }
+            total: null,
+        };
     },
     methods: {
         simulate() {
+            this.$store.commit('SET_SHOW_CONTATO', !this.showContato);
             let valorSuperior = 30;
             let valorInferior = 10;
-            let valorInferiorComDesconto = 6;
-            let valorSuperiorComDesconto = 20;
+            // let valorInferiorComDesconto = 6;
+            // let valorSuperiorComDesconto = 20;
             let totalSuperior = this.superior * valorSuperior;
             let totalInferior = this.inferior * valorInferior;
-            let total = totalSuperior + totalInferior
+            let total = totalSuperior + totalInferior;
 
-            if(total > 210) {
-                let sobraSuperior = this.superior - 7;
-                let sobraInferior = this.inferior - 21;
+            if (total > 210 && total < 2500) {
+                setTimeout(() => {
+                    this.total = totalSuperior + totalInferior;
+                }, 2000);
+                // let sobraSuperior = this.superior - 7;
+                // let sobraInferior = this.inferior - 21;
 
-                if(this.superior > 7 && this.inferior > 21) {
-                    this.total = 210 + (valorSuperiorComDesconto * sobraSuperior) + (valorInferiorComDesconto * sobraInferior)
-                }
+                // if (this.superior > 7 && this.inferior > 21) {
+                //     this.total =
+                //         210 +
+                //         valorSuperiorComDesconto * sobraSuperior +
+                //         valorInferiorComDesconto * sobraInferior;
+                // }
 
-                if(this.superior > 7 && this.inferior <= 21) {
-                    this.total = 210 + valorSuperiorComDesconto * sobraSuperior
-                }
+                // if (this.superior > 7 && this.inferior <= 21) {
+                //     this.total = 210 + valorSuperiorComDesconto * sobraSuperior;
+                // }
 
-                if(this.superior <= 7 && this.inferior > 21) {
-                    this.total = 210 + (valorInferiorComDesconto * sobraInferior)
-                }
+                // if (this.superior <= 7 && this.inferior > 21) {
+                //     this.total = 210 + valorInferiorComDesconto * sobraInferior;
+                // }
 
-                if (this.inferior && this.superior == 7) {
-                    this.total = 210 + (valorInferiorComDesconto * this.inferior)
-                }
+                // if (this.inferior && this.superior == 7) {
+                //     this.total = 210 + valorInferiorComDesconto * this.inferior;
+                // }
 
-                if (this.superior && this.inferior == 21) {
-                    this.total = 210 + (valorSuperiorComDesconto * this.superior)
-                }
+                // if (this.superior && this.inferior == 21) {
+                //     this.total = 210 + valorSuperiorComDesconto * this.superior;
+                // }
 
-                if (this.superior && this.inferior > 21) {
-                    this.total = 210 + (valorSuperiorComDesconto * this.superior) + (valorInferiorComDesconto * sobraInferior)
-                }
+                // if (this.superior && this.inferior > 21) {
+                //     this.total =
+                //         210 +
+                //         valorSuperiorComDesconto * this.superior +
+                //         valorInferiorComDesconto * sobraInferior;
+                // }
 
-                if (this.inferior && this.superior > 7) {
-                    this.total = 210 + (valorInferiorComDesconto * this.inferior) + (valorSuperiorComDesconto * sobraSuperior)
-                }
+                // if (this.inferior && this.superior > 7) {
+                //     this.total =
+                //         210 +
+                //         valorInferiorComDesconto * this.inferior +
+                //         valorSuperiorComDesconto * sobraSuperior;
+                // }
+            } else if (total > 2500) {
+                this.total = 0;
             } else {
-                this.total = 210
+                setTimeout(() => {
+                    this.total = 210;
+                }, 2000);
             }
-
-            this.$store.commit("SET_SHOW_SIMULACAO", true)
         },
         reset() {
-            this.superior= null;
-            this.inferior= null;
-            this.total= null;
-        }
-    }
+            this.superior = null;
+            this.inferior = null;
+            this.total = null;
+            this.$store.commit('SET_SHOW_CONTATO', !this.showContato);
+        },
+    },
 };
 </script>
 
@@ -133,6 +207,12 @@ export default {
 
     .content__simulacao {
         width: 100%;
+
+        @media ($mobile) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
         h2 {
             @include font-work(1.875rem, 900, 0);
@@ -154,7 +234,9 @@ export default {
         .bg-primary-gradiente {
             height: 0.5456rem;
             width: 9.4688rem;
-            background: transparent linear-gradient(90deg, #803290 0%, #40bbe0 100%) 0% 0% no-repeat padding-box;
+            background: transparent
+                linear-gradient(90deg, #803290 0%, #40bbe0 100%) 0% 0% no-repeat
+                padding-box;
             margin: auto auto 1.875rem;
 
             @media ($mobile) {
@@ -197,14 +279,18 @@ export default {
                         flex-wrap: wrap;
 
                         &.active {
-                             margin-top: 2.9625rem;
+                            margin-top: 2.9625rem;
+
+                            @media ($mobile) {
+                                margin-top: 0;
+                            }
                         }
 
                         .total {
                             display: flex;
-                            justify-content:center;
+                            justify-content: center;
                             width: 100%;
-                            margin-bottom: .2rem;
+                            margin-bottom: 0.2rem;
 
                             h5 {
                                 @include font-work(1.125rem, 900, 0);
@@ -220,9 +306,9 @@ export default {
                             }
 
                             h6 {
-                               @include font-work(1.125rem, 900, 0);
+                                @include font-work(1.125rem, 900, 0);
                                 color: $white;
-                                max-width:3.125rem;
+                                max-width: 3.125rem;
                                 line-height: 0.875rem;
                                 align-self: center;
 
@@ -245,6 +331,7 @@ export default {
                             font-size: 1.25rem;
                             font-weight: 600;
                             color: $text-dark;
+                            margin-top: 1rem;
 
                             @media ($mobile) {
                                 width: 8.9375rem;

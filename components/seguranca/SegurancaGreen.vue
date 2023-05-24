@@ -12,12 +12,13 @@
                     <ul>
                         <li>
                             <img src="@/assets/images/green/one.svg" alt="" />
-                            Abra sua conta e cadastre seus clientes
+                            Abra sua conta em poucos passos, cadastre sua
+                            empresa e clientes
                         </li>
                         <li>
                             <img src="@/assets/images/green/two.svg" alt="" />
-                            Cadastre ativos ou integre automaticamente com as
-                            principais casas
+                            Registre os ativos negociados ou integre
+                            automaticamente com as principais casas
                         </li>
                         <li>
                             <img src="@/assets/images/green/three.svg" alt="" />
@@ -26,7 +27,7 @@
                         </li>
                         <li>
                             <img src="@/assets/images/green/four.svg" alt="" />
-                            Exporte estudos e relatórios detalhados
+                            Analise sua estratégia e gere relatórios detalhados
                         </li>
                     </ul>
                 </div>
@@ -137,7 +138,7 @@
                     }
 
                     &:first-child {
-                        max-width: 22.625rem;
+                        // max-width: 22.625rem;
 
                         @media ($mobile) {
                             max-width: 11.8125rem;
@@ -145,7 +146,7 @@
                     }
 
                     &:last-child {
-                        max-width: 18.75rem;
+                        // max-width: 18.75rem;
 
                         @media ($mobile) {
                             max-width: 13rem;
