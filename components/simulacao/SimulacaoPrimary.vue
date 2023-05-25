@@ -133,7 +133,7 @@ export default {
             form.style.display = 'none';
         },
         simulate() {
-            if (!this.superior || this.inferior) return;
+            if (!this.superior || !this.inferior) return;
             this.$store.commit('SET_SHOW_CONTATO', !this.showContato);
             let valorSuperior = 30;
             let valorInferior = 10;
