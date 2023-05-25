@@ -26,7 +26,8 @@ export default {
 
 <style lang="scss">
 .hbspt-form {
-    #hsForm_d281f4fa-7233-4beb-af74-d5d04f25add4 {
+    #hsForm_d281f4fa-7233-4beb-af74-d5d04f25add4,
+    .submitted-message {
         position: absolute;
         z-index: 9;
         bottom: calc(0% - 522rem);
@@ -151,6 +152,18 @@ export default {
                     }
                 }
             }
+        }
+    }
+
+    .submitted-message {
+        bottom: calc(0% - 515rem);
+
+        @media ($laptopMediumMax) and ($laptopMax) {
+            bottom: calc(0% - 532rem);
+        }
+
+        @media ($desktopLarge) {
+            bottom: calc(0% - 582rem);
         }
     }
 }

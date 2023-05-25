@@ -123,11 +123,11 @@
                     </div>
 
                     <div class="widget">
-                        <h3>Contato</h3>
+                        <!-- <h3>Contato</h3> -->
 
                         <ul class="menu__footer">
                             <div class="links">
-                                <li>
+                                <!-- <li>
                                     <a href="mailto:email@britechair.com">
                                         email@britechair.com
                                     </a>
@@ -136,23 +136,21 @@
                                     <a href="tel:+5511900000000">
                                         +55 11 90000-0000
                                     </a>
-                                </li>
+                                </li> -->
                             </div>
                             <div class="links">
                                 <li>
-                                    <nuxt-link to="/PoliticaDePrivacidade">
+                                    <a href="/PoliticaDePrivacidade">
                                         Política de privacidade
-                                    </nuxt-link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <nuxt-link to="/DuvidasFrequentes">
+                                    <a href="/DuvidasFrequentes">
                                         Dúvidas frequentes
-                                    </nuxt-link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <nuxt-link to="/TermosDeUso">
-                                        Termo de uso
-                                    </nuxt-link>
+                                    <a href="/TermosDeUso"> Termo de uso </a>
                                 </li>
                             </div>
                         </ul>

@@ -46,9 +46,9 @@
                         </li>
 
                         <li class="nav__link">
-                            <nuxt-link to="/DuvidasFrequentes" class="link">
+                            <a href="/DuvidasFrequentes" class="link">
                                 DÚVIDAS FREQUENTES
-                            </nuxt-link>
+                            </a>
                         </li>
 
                         <li class="nav__link">

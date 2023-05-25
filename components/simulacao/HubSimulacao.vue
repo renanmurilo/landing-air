@@ -1,11 +1,35 @@
-<template slot="simulacao">
+<template>
     <div ref="loadHbsptSimulacao"></div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
+    computed: {
+        ...mapGetters({
+            showContato: 'GET_SHOW_CONTATO',
+        }),
+    },
     mounted() {
         this.loadHbsptSimulacao();
+    },
+    watch: {
+        showContato() {
+            if (this.showContato) {
+                console.log(this.showContato);
+                const scriptSimnular = document.createElement('script');
+                scriptSimnular.src = '//js.hsforms.net/forms/embed/v2.js';
+                scriptSimnular.onload = () => {
+                    window.hbspt.forms.create({
+                        region: 'na1',
+                        portalId: '22815802',
+                        formId: '0bc395f1-9833-4ec6-8b91-2381633ce649',
+                    });
+                };
+                this.$refs.loadHbsptSimulacao.appendChild(scriptSimnular);
+            }
+        },
     },
     methods: {
         loadHbsptSimulacao() {
@@ -141,6 +165,10 @@ export default {
                 width: 100%;
                 height: 1.5rem;
             }
+        }
+        .legal-consent-container .hs-error-msgs label {
+            position: relative;
+            bottom: 1.4rem;
         }
 
         .hs_error_rollup {

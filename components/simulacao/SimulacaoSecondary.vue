@@ -100,9 +100,8 @@
                 </div>
             </div>
         </div>
-        <HubSimulacao v-if="showContato">
-            <slot name="simulacao" />
-        </HubSimulacao>
+        <HubSimulacao v-if="showContato"> </HubSimulacao>
+        <a @click.stop.prevent="close" class="close" v-if="showContato"> X </a>
     </div>
 </template>
 
@@ -123,7 +122,18 @@ export default {
         };
     },
     methods: {
+        close() {
+            this.$store.commit('SET_SHOW_CONTATO', !this.showContato);
+            this.superior = null;
+            this.inferior = null;
+            this.total = null;
+            let form = document.getElementById(
+                'hsForm_0bc395f1-9833-4ec6-8b91-2381633ce649'
+            );
+            form.style.display = 'none';
+        },
         simulate() {
+            if (!this.superior || this.inferior) return;
             this.$store.commit('SET_SHOW_CONTATO', !this.showContato);
             let valorSuperior = 30;
             let valorInferior = 10;
@@ -136,7 +146,7 @@ export default {
             if (total > 210 && total < 2500) {
                 setTimeout(() => {
                     this.total = totalSuperior + totalInferior;
-                }, 2000);
+                }, 1000);
                 // let sobraSuperior = this.superior - 7;
                 // let sobraInferior = this.inferior - 21;
 
@@ -177,11 +187,13 @@ export default {
                 //         valorSuperiorComDesconto * sobraSuperior;
                 // }
             } else if (total > 2500) {
-                this.total = 0;
+                setTimeout(() => {
+                    this.total = 'Falar com um especialista';
+                }, 1000);
             } else {
                 setTimeout(() => {
                     this.total = 210;
-                }, 2000);
+                }, 1000);
             }
         },
         reset() {
@@ -202,6 +214,20 @@ export default {
 
     @media ($mobile) {
         margin: 3.0531rem auto 3rem;
+    }
+
+    .close {
+        position: fixed;
+        top: calc(50% - 10rem);
+        right: calc(50% - 18.75rem);
+        @include font-work(1.875rem, 500, 0);
+        color: $text-dark;
+        z-index: 110;
+
+        @media ($mobile) {
+            top: 3%;
+            right: 4%;
+        }
     }
 
     .content__simulacao {
@@ -336,6 +362,7 @@ export default {
                                 width: 8.9375rem;
                                 height: 2.9375rem;
                                 font-size: 0.875rem;
+                                margin-top: 0;
                             }
                         }
                     }

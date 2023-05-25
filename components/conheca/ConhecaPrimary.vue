@@ -15,7 +15,12 @@
                             internacional e estamos indo além para criar nossos
                             próprios padrões de excelência.
                         </p>
-                        <a href="#simulacao" class="link">Saiba mais</a>
+                        <a
+                            href="https://britech.global/"
+                            target="_blank"
+                            class="link"
+                            >Saiba mais</a
+                        >
                     </div>
 
                     <div class="icons">
@@ -56,7 +61,7 @@
                             </div>
 
                             <div class="text">
-                                <h3>+ 450</h3>
+                                <h3>+ 840</h3>
                                 <p>clientes globais</p>
                             </div>
                         </div>
