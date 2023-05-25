@@ -28,6 +28,7 @@ export default {};
     @media ($mobile) {
         display: block;
         height: 40.625rem;
+        padding: 0 0 10rem;
     }
 
     .content__contato {
