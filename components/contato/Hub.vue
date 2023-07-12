@@ -30,7 +30,7 @@ export default {
   .submitted-message {
     position: absolute;
     z-index: 9;
-    bottom: calc(50% - 554rem);
+    bottom: calc(50% - 564rem);
     right: calc(50% - 32.5rem);
     display: flex;
     flex-wrap: wrap;
